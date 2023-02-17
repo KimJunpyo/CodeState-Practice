@@ -1,0 +1,61 @@
+.background-dog {
+  position: absolute;
+  margin: 0px 5px;
+  border-radius: 50%;
+  border: 2px solid #d49a6a;
+  background-color: #ecab75;
+  color: #f8cba6;
+  font-size: bold;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: bottom-to-top;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  overflow: hidden;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.background-dog.dog2 {
+  width: 60px;
+  height: 60px;
+  left: 20px;
+  animation-duration: 10s;
+  animation-iteration-count: 3s infinite;
+}
+
+.background-dog.dog3 {
+  width: 30px;
+  height: 30px;
+  right: 40px;
+  animation-duration: 7s;
+  animation-iteration-count: 4s infinite;
+}
+
+i {
+  color: #fffbeb;
+  line-height: 45px;
+}
+
+.fas2 {
+  line-height: 60px;
+}
+
+.fas2 {
+  line-height: 60px;
+}
+
+@keyframes bottom-to-top {
+  from {
+    transform: scale(20%, 20%);
+    bottom: -20%;
+  }
+  to {
+    transform: scale(120%, 120%);
+    bottom: 120%;
+  }
+}

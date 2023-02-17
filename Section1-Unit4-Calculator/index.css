@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  font-family: "Gamja Flower", cursive;
+  transform: translate3d(0, 0, 0);
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-image: url("/v855-techi-nunoon-33.jpg");
+  background-size: cover;
+  z-index: -2;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.dog {
+  border: 8px solid rgb(204, 133, 27);
+  border-radius: 30px;
+}
+
+.dog-ear {
+  position: relative;
+  display: inline;
+  top: -25px;
+  left: 20px;
+  width: 0;
+  height: 0;
+  margin-right: 0px;
+  border-radius: 20px 0 0 0;
+  border-bottom: 30px solid rgb(204, 133, 27);
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+}
+
+.dog-ear-inner {
+  position: absolute;
+  top: 30px;
+  left: -20px;
+  width: 0;
+  height: 0;
+  border-radius: 20px 0 0 0;
+  border-bottom: 20px solid rgb(238, 175, 175);
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
+.dog-ear-2 {
+  position: relative;
+  display: inline;
+  top: -25px;
+  left: 136px;
+  width: 0;
+  height: 0;
+  border-radius: 20px 0 0 0;
+  border-bottom: 30px solid rgb(204, 133, 27);
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+}
+
+.dog-ear-inner-2 {
+  position: absolute;
+  top: 30px;
+  left: -20px;
+  width: 0;
+  height: 0;
+  border-radius: 20px 0 0 0;
+  border-bottom: 20px solid rgb(238, 175, 175);
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+}
+
+.calculator {
+  width: 260px;
+  height: 410px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid transparent;
+  background-image: linear-gradient(#ecf9ff 80%, #fffbeb 20%),
+    linear-gradient(#b1ddf1 80%, #f3e199 20%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.nav {
+  flex: 2 1 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav button {
+  padding: 0px;
+  font-size: 12px;
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.drop-down {
+  background-color: rgb(126, 235, 153);
+  color: #f0f0f0;
+  font-weight: bold;
+  margin: 5px 2px 0px 0px;
+}
+
+.drop-down:hover {
+  background-color: rgb(44, 224, 89);
+}
+
+.drop-down:active {
+  color: #7a7a7a;
+  background-color: rgb(19, 192, 63);
+}
+
+.get-out {
+  background-color: rgb(240, 121, 121);
+  color: #f0f0f0;
+  font-weight: bold;
+  margin: 5px 10px 0px 0px;
+}
+
+.get-out:hover {
+  background-color: rgb(241, 87, 87);
+}
+
+.get-out:active {
+  background-color: rgb(243, 70, 70);
+  color: #7a7a7a;
+}
+
+.display {
+  border-radius: 20px;
+  margin: 10px 15px 5px;
+  transition: 0.3s;
+  background-color: white;
+  flex: 17 1 0;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  border: 3px solid rgb(240, 240, 240);
+}
+
+.display:focus-within {
+  background-color: #fffbeb;
+  border: 3px solid rgb(194, 194, 194);
+}
+
+.display > input {
+  margin: 0px 15px 10px 5px;
+  color: #f8cba6;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  text-align: right;
+  width: 100%;
+  word-break: break-word;
+  flex: 2 1 0;
+}
+
+p:nth-of-type(1) {
+  display: flex;
+  flex: 1 1 0;
+  margin: 0px;
+  font-size: 12px;
+  color: #f1a262;
+  padding-right: 15px;
+  padding-top: 5px;
+}
+
+input::placeholder {
+  color: #f8cba6;
+}
+
+.button-area {
+  margin: 0px 15px 20px;
+  flex: 73 1 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f8cba6;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  border-radius: 25px;
+  padding: 1px;
+  border: 3px solid #f7b885;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+cite {
+  position: absolute;
+  font-style: normal;
+  bottom: 0px;
+  font-size: 1px;
+}
+
+cite a {
+  font-size: 1px;
+}
